@@ -120,7 +120,7 @@ window.PROJECTS = [
       "Rehabilitation of the Maternal and Children Hospital in Malumfashi, sponsored by Senator Bello Mandiya (Funtua Zone), with Muntasrab Global Concept on site.",
     scope: ["Building rehabilitation", "External works"],
     photos: [
-      { src: "", caption: "Hospital buildings during rehabilitation" },
+      { src: "assets/photos/maternal-children-hospital-2022.jpg", caption: "Hospital buildings during rehabilitation, March 2022" },
       { src: "", caption: "Completed hospital" },
     ],
   },
@@ -163,8 +163,8 @@ window.PROJECTS = [
     scope: ["Gatehouse", "Perimeter fence", "Bus park & shades", "Parking & landscaping"],
     client: "Katsina State Government",
     photos: [
+      { src: "assets/photos/ktsta-bus-park-render.jpg", caption: "Design render: bus park with shades" },
       { src: "", caption: "Design render: KTSTA entrance and gatehouse" },
-      { src: "", caption: "Design render: bus park with shades" },
     ],
   },
 
