@@ -4,10 +4,19 @@ Static website for **Muntasrab Global Concept Ltd**, a Nigerian civil
 engineering, construction and consultancy company led by
 **Engr. Muntari Sagir Malumfashi, FNICE**.
 
+One website with six pages that share the same header, footer and design:
+
 | Page | File | Contents |
 |------|------|----------|
-| Company website | `index.html` | Hero, credentials, about, services, leadership, community impact, process, contact / proposal form |
-| Portfolio | `portfolio.html` | Counts, filters (community / company / healthcare / education / infrastructure), project cards, detail pop-up with photo gallery |
+| Home | `index.html` | Hero, credentials, short about, selected projects, community impact teaser |
+| About | `about.html` | Who we are, mission and vision, leadership, why work with us |
+| Services | `services.html` | Six services, how we work |
+| Portfolio | `portfolio.html` | Counts, filters, all projects, detail pop-up with photo gallery |
+| Community Impact | `impact.html` | Projects commissioned on 20 April 2026, Governor's quote, photos |
+| Contact | `contact.html` | Offices, phone, email, proposal / tender form |
+
+The header, menu and footer are repeated in each page. If you change one,
+change it in all six.
 
 No build step. Open `index.html` in a browser or serve the folder with any static host.
 
@@ -34,15 +43,15 @@ each source:
 1. **Photos.** Every image is a labelled placeholder. Add photos to
    `assets/photos/` and point to them:
    - projects: `photos[].src` in `js/projects.js`
-   - CEO portrait and impact gallery: the `data-src` attribute on each
-     `data-photo` element in `index.html`
+   - CEO portrait (`about.html`) and impact photos (`index.html`,
+     `impact.html`): the `data-src` attribute on each `data-photo` element
 
    Use the company's own photos, or get permission. The Katsina State
    Government press photos belong to the government.
 2. **Company projects.** `js/projects.js` lists nine company projects taken
    from public posts. Have the company confirm the status, dates and scope of
    each (see the `TODO` comments).
-3. **Contact details** (search `TODO` in `index.html`): office addresses,
+3. **Contact details** (search `TODO` in `contact.html`): office addresses,
    phone, email. The form's `data-email` must match.
 4. **Confirm with the company:** the about text, mission and vision, the service
    list, and what vehicle was donated to GGSSS (the press release says an
@@ -51,12 +60,16 @@ each source:
 ## Structure
 
 ```
-index.html              company website
+index.html              home
+about.html              about & leadership
+services.html           services & how we work
 portfolio.html          portfolio
+impact.html             community impact
+contact.html            contact / proposal form
 css/styles.css          shared styles
 js/projects.js          portfolio data (edit this)
 js/main.js              nav, animations, photo placeholders, grid, filters, modal, form
 assets/logo.svg         logo mark / favicon
-assets/photos/          project photos go here
+assets/photos/          project photos
 docs/company-research.md  sources for every fact on the site
 ```

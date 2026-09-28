@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio — Muntasrab Global Concept Ltd</title>
-  <meta name="description" content="Projects and community impact work by Muntasrab Global Concept Ltd and its Chief Executive, Engr. Muntari Sagir Malumfashi, FNICE.">
+  <title>About — Muntasrab Global Concept Ltd</title>
+  <meta name="description" content="About Muntasrab Global Concept Ltd, its mission and its leadership under Engr. Muntari Sagir Malumfashi, FNICE.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +27,9 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="impact.html">Impact</a></li>
         <li><a class="btn btn--gold" href="contact.html">Request a Proposal</a></li>
       </ul>
@@ -39,38 +39,55 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Portfolio</span>
-        <h1>Building for communities across Katsina State.</h1>
-        <p class="lead" style="color:#b9c9c2">Housing, healthcare facilities, mosques, transport infrastructure, classrooms, roads and drainage.</p>
+        <span class="eyebrow">About Us</span>
+        <h1>About Muntasrab Global Concept.</h1>
+        <p class="lead" style="color:#b9c9c2">Registered in Nigeria (RC 1161080), a REDAN member and PenCom compliant, led by a Fellow of the Nigerian Institution of Civil Engineers.</p>
       </div>
     </section>
 
-    <!-- Counts are computed from js/projects.js (placeholder slots are not counted) -->
-    <section class="section--dark" style="padding:48px 0;border-top:1px solid rgba(255,255,255,.06)">
-      <div class="container stats-grid">
-        <div class="stat"><strong data-stat="total">0</strong><span>Projects listed</span></div>
-        <div class="stat"><strong data-stat="company">0</strong><span>Company projects</span></div>
-        <div class="stat"><strong data-stat="community">0</strong><span>Community impact</span></div>
-        <div class="stat"><strong data-stat="healthcare">0</strong><span>Healthcare</span></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="filters" data-filters role="group" aria-label="Filter projects">
-          <button class="filter active" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" data-filter="company" aria-pressed="false">Company projects</button>
-          <button class="filter" data-filter="community" aria-pressed="false">Community impact</button>
-          <button class="filter" data-filter="housing" aria-pressed="false">Housing</button>
-          <button class="filter" data-filter="healthcare" aria-pressed="false">Healthcare</button>
-          <button class="filter" data-filter="religious" aria-pressed="false">Religious buildings</button>
-          <button class="filter" data-filter="education" aria-pressed="false">Education</button>
-          <button class="filter" data-filter="infrastructure" aria-pressed="false">Infrastructure</button>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">About Us</span>
+          <h2>An indigenous engineering firm with a global outlook.</h2>
+          <p class="lead">Muntasrab Global Concept Ltd is a registered Nigerian limited liability company offering civil engineering, building construction and consultancy services.</p>
+          <!-- TODO: confirm this description with the company -->
+          <p>Our engineers, surveyors and project managers work together from design and costing through construction and handover. We build infrastructure that lasts and that serves the communities using it.</p>
+          <ul class="value-list">
+            <li><span class="tick">✓</span><div><strong>Registered &amp; compliant.</strong> CAC-registered (RC 1161080), a REDAN member and PenCom compliant.</div></li>
+            <li><span class="tick">✓</span><div><strong>Fellow-led engineering.</strong> Led by a Fellow of the Nigerian Institution of Civil Engineers.</div></li>
+            <li><span class="tick">✓</span><div><strong>Community first.</strong> Committed to improving healthcare, education and infrastructure where we work.</div></li>
+          </ul>
         </div>
+        <div class="about-card reveal">
+          <svg class="pattern" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 48V26l10-10 10 10 10-10 10 10v22" fill="none" stroke="#c9a24a" stroke-width="4"/></svg>
+          <span class="eyebrow">Our Mission</span>
+          <!-- TODO: confirm mission and vision wording with the company -->
+          <p class="quote">"To deliver safe, durable and cost-effective infrastructure that improves lives across Nigeria."</p>
+          <hr style="border:0;border-top:1px solid rgba(255,255,255,.12);margin:28px 0">
+          <h3>Our Vision</h3>
+          <p style="margin:0">To be a leading indigenous engineering and construction firm, known for integrity, quality and service to community.</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="project-grid" data-project-grid></div>
-
-        <p class="modal-note" style="margin-top:32px">"Community impact" projects were funded personally by our Chief Executive, Engr. Muntari Sagir Malumfashi, and commissioned by Katsina State Governor Malam Dikko Umaru Radda on 20 April 2026 (<a href="https://katsinastate.gov.ng/2026/04/20/governor-radda-urges-affluent-individuals-to-support-community-development/" target="_blank" rel="noopener">press release</a>).</p>
+    <!-- Leadership -->
+    <section class="section" id="leadership">
+      <div class="container leader">
+        <div class="leader-photo reveal" data-photo="Portrait of Engr. Muntari Sagir Malumfashi"></div>
+        <div class="reveal">
+          <span class="eyebrow">Leadership</span>
+          <h2>Engr. Muntari Sagir Malumfashi, FNICE</h2>
+          <p class="leader-role">Chief Executive</p>
+          <p>Engr. Muntari Sagir Malumfashi leads Muntasrab Global Concept Ltd. In October 2025 he was made a Fellow of the Nigerian Institution of Civil Engineers (FNICE) at the Institution's 23rd annual conference in Kano.</p>
+          <p>Under his leadership the company has carried out contracts for the Katsina State Government, housing financed by the Federal Mortgage Bank of Nigeria, and a series of Juma'at mosques across the state.</p>
+          <p>Outside the company, he has personally funded healthcare, education and infrastructure projects in his home community of Malumfashi, Katsina State. Governor Dikko Umaru Radda commissioned these projects in April 2026.</p>
+          <ul class="creds-list">
+            <li>Fellow, Nigerian Institution of Civil Engineers</li>
+            <li>Chief Executive, Muntasrab Global Concept</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -97,35 +114,17 @@
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="container" style="padding:96px 20px">
       <div class="cta-band reveal">
         <div>
           <h2>Have a project or tender?</h2>
-          <p>Request a proposal or our capability statement.</p>
+          <p>Government agencies, development partners and private clients can request a proposal or capability statement.</p>
         </div>
         <a class="btn btn--gold" href="contact.html">Request a proposal</a>
       </div>
     </section>
   </main>
-
-  <!-- Project detail modal -->
-  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
-    <div class="modal-dialog">
-      <button class="modal-close" aria-label="Close">×</button>
-      <div class="modal-media"></div>
-      <div class="modal-body">
-        <span class="eyebrow" data-m-cat></span>
-        <h2 id="m-title" data-m-title></h2>
-        <p data-m-summary style="color:var(--ink-soft)"></p>
-        <div class="facts" data-m-facts></div>
-        <div class="modal-gallery" data-m-gallery></div>
-        <h3>Scope</h3>
-        <ul class="scope" data-m-scope></ul>
-        <p class="modal-note" data-m-note hidden>Funded personally by Engr. Muntari Sagir Malumfashi and commissioned by Governor Dikko Umaru Radda on 20 April 2026.</p>
-        <div style="margin-top:28px"><a class="btn btn--green" href="contact.html">Discuss a similar project</a></div>
-      </div>
-    </div>
-  </div>
 
   <footer class="site-footer">
     <div class="container">
@@ -157,7 +156,6 @@
     </div>
   </footer>
 
-  <script src="js/projects.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

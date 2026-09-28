@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Muntasrab Global Concept Ltd</title>
+  <meta name="description" content="Contact Muntasrab Global Concept Ltd or request a proposal.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Muntasrab Global Concept — home">
+        <img class="brand-mark" src="assets/logo.svg" alt="">
+        <span class="brand-text">
+          <span class="brand-name">Muntasrab</span><br>
+          <span class="brand-sub">Global Concept Ltd</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a class="btn btn--gold" href="contact.html" aria-current="page">Request a Proposal</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Request a proposal.</h1>
+        <p class="lead" style="color:#b9c9c2">Request a proposal, submit tender documents or ask about our services.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--tint" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's discuss your project</h2>
+          <p class="lead">Call, email or send the form. We usually respond within one business day.</p>
+          <!-- TODO: replace every placeholder below with the company's confirmed details -->
+          <ul class="contact-list">
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <div><small>Head office</small>Head office address</div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <div><small>Regional office</small>Regional office address</div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <div><small>Phone / WhatsApp</small><a href="tel:+2340000000000">+234 000 000 0000</a></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+              <div><small>Email</small><a href="mailto:info@example.com">info@example.com</a></div>
+            </li>
+          </ul>
+        </div>
+        <form class="form reveal" id="contact-form" data-email="info@example.com">
+          <div class="form-row">
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="f-org">Organisation</label><input id="f-org" name="org" autocomplete="organization"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field">
+            <label for="f-service">Enquiry type</label>
+            <select id="f-service" name="service">
+              <option>Request for proposal / tender</option>
+              <option>Civil engineering &amp; infrastructure</option>
+              <option>Building construction</option>
+              <option>Housing development</option>
+              <option>Quantity surveying</option>
+              <option>Consultancy / ESIA</option>
+              <option>Careers</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-msg">Project details</label><textarea id="f-msg" name="message" required placeholder="Location, scope, timeline…"></textarea></div>
+          <button class="btn btn--green" type="submit">Send enquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/logo.svg" alt="">
+            <span class="brand-text"><span class="brand-name">Muntasrab</span><br><span class="brand-sub">Global Concept Ltd</span></span>
+          </a>
+          <p style="margin-top:16px">Civil engineering, construction and consultancy in Nigeria.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul><li><a href="about.html">About</a></li><li><a href="about.html#leadership">Leadership</a></li><li><a href="impact.html">Community impact</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h4>Our Work</h4>
+          <ul><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="services.html#process">How we work</a></li><li><a href="contact.html">Request a proposal</a></li></ul>
+        </div>
+        <div>
+          <h4>Registration</h4>
+          <ul><li>RC 1161080</li><li>REDAN member</li><li>PenCom compliant</li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Muntasrab Global Concept Ltd. All rights reserved.</span>
+        <span>Registered in the Federal Republic of Nigeria</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
