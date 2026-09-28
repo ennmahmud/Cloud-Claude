@@ -610,3 +610,91 @@ p { margin: 0 0 1em; }
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* ---------- Photo placeholders ---------- */
+.photo-ph {
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px;
+  text-align: center;
+  color: var(--green-700);
+  background:
+    repeating-linear-gradient(135deg, transparent 0 14px, rgba(26, 77, 62, 0.06) 14px 28px),
+    var(--gold-100);
+  border: 2px dashed rgba(26, 77, 62, 0.25);
+}
+.photo-ph svg { width: 40px; height: 40px; opacity: 0.7; }
+.photo-ph span { font-weight: 600; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.photo-ph small { font-size: 0.85rem; color: var(--ink-soft); max-width: 260px; }
+.section--dark .photo-ph { background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,0.04) 14px 28px), var(--green-800); color: var(--gold-400); border-color: rgba(220,187,106,0.35); }
+.section--dark .photo-ph small { color: #b9c9c2; }
+
+.project-cat { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-500); }
+.project--slot { border-style: dashed; }
+.project--slot h3 { color: var(--ink-soft); }
+
+/* ---------- Leadership ---------- */
+.leader {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+@media (max-width: 860px) { .leader { grid-template-columns: 1fr; gap: 28px; } }
+.leader-photo { aspect-ratio: 4 / 5; border-radius: 20px; overflow: hidden; max-width: 320px; }
+.leader-photo img { width: 100%; height: 100%; object-fit: cover; }
+.leader-role { font-size: 0.95rem; color: var(--gold-500); font-weight: 600; margin-bottom: 18px; }
+.leader .creds-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 20px 0 0; }
+.leader .creds-list li { background: var(--white); border: 1px solid var(--line); padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 500; }
+
+/* ---------- Community impact ---------- */
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: start;
+}
+@media (max-width: 900px) { .impact-grid { grid-template-columns: 1fr; } }
+.impact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.impact-list li {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 16px 18px; border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.impact-list .dot { flex-shrink: 0; width: 10px; height: 10px; margin-top: 8px; border-radius: 50%; background: var(--gold-400); }
+.impact-list strong { color: var(--white); display: block; }
+.impact-list span { font-size: 0.92rem; }
+.impact-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.impact-photos > div { aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; }
+.impact-photos > div:first-child { grid-column: span 2; aspect-ratio: 16 / 9; }
+.pull-quote {
+  margin: 32px 0 0;
+  padding-left: 20px;
+  border-left: 3px solid var(--gold-500);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+.pull-quote cite { display: block; margin-top: 10px; font-family: var(--font-body); font-size: 0.85rem; font-style: normal; color: #9fb3aa; }
+.source-note { font-size: 0.82rem; color: #9fb3aa; margin-top: 20px; }
+.source-note a { color: var(--gold-400); }
+
+/* ---------- Modal gallery ---------- */
+.modal-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin: 0 0 20px; }
+.modal-gallery:empty { display: none; }
+.modal-gallery figure { margin: 0; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; }
+.modal-gallery .photo-ph { min-height: 0; padding: 8px; }
+.modal-gallery .photo-ph svg { width: 24px; height: 24px; }
+.modal-gallery .photo-ph span { display: none; }
+.modal-gallery .photo-ph small { font-size: 0.72rem; }
+.modal-note { font-size: 0.85rem; color: var(--ink-soft); background: var(--paper); border-radius: 10px; padding: 12px 14px; margin-top: 20px; }
+.steps--light .step p { color: var(--ink-soft); }
+.steps--light .step::before { color: var(--gold-500); }

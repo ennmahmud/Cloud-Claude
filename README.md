@@ -1,46 +1,57 @@
 # Muntasrab Global Concept Ltd — Website & Portfolio
 
-Static website for **Muntasrab Global Concept Ltd**, a Nigerian real estate
-development and construction company.
+Static website for **Muntasrab Global Concept Ltd**, a Nigerian civil
+engineering, construction and consultancy company led by
+**Engr. Muntari Sagir Malumfashi, FNICE**.
 
 | Page | File | Contents |
 |------|------|----------|
-| Company website | `index.html` | Hero, credentials, about/mission, services, process, featured projects, contact form |
-| Portfolio | `portfolio.html` | Project stats, category filters, project grid, detail pop-up, CTA |
+| Company website | `index.html` | Hero, credentials, about, services, leadership, community impact, process, contact / proposal form |
+| Portfolio | `portfolio.html` | Counts, filters (community / company / healthcare / education / infrastructure), project cards, detail pop-up with photo gallery |
 
-No build step or dependencies are needed. Open `index.html` in a browser, or
-serve the folder with any static host (GitHub Pages, Netlify, Vercel, cPanel).
+No build step. Open `index.html` in a browser or serve the folder with any static host.
 
 ```bash
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
-## Verified company facts used on the site
+## What the content is based on
 
-- **RC 1161080**, registered with the Corporate Affairs Commission (CAC)
-- Listed as a financial member of the **Real Estate Developers Association of Nigeria (REDAN)**
-- Listed on the **PenCom** compliance certificate register (employer code PR0001161080)
+Every fact on the site comes from `docs/company-research.md`, which records
+each source:
 
-## Before going live: replace placeholders
+- RC 1161080, REDAN membership, PenCom compliance
+- Engr. Muntari Sagir Malumfashi, Chief Executive; FNICE (October 2025)
+- The six community projects commissioned by Governor Dikko Umaru Radda on
+  20 April 2026. The CEO funded these **personally**, and the site says so.
 
-1. **Contact details** in `index.html` (search for `TODO`): office address,
-   phone/WhatsApp, and email. The email also appears in the form's `data-email`
-   attribute; the form opens the visitor's email app with the enquiry filled in.
-2. **Projects** in `js/projects.js`: every entry is *sample* content. Replace
-   the entries with real projects. Put photos in `assets/` and set
-   `image: "assets/photo.jpg"`. Without a photo, an illustration is drawn.
-3. **Sample notes**: after adding real projects, delete the `.sample-note`
-   paragraphs in `index.html` and `portfolio.html`.
-4. Review the mission/vision wording and services list with the company.
-5. Optional: swap `assets/logo.svg` for the official logo.
+## Before going live
+
+1. **Photos.** Every image is a labelled placeholder. Add photos to
+   `assets/photos/` and point to them:
+   - projects: `photos[].src` in `js/projects.js`
+   - CEO portrait and impact gallery: the `data-src` attribute on each
+     `data-photo` element in `index.html`
+
+   Use the company's own photos, or get permission. The Katsina State
+   Government press photos belong to the government.
+2. **Company projects.** `js/projects.js` has three `company-project-*` slots.
+   Fill them in with real Muntasrab contracts or delete them.
+3. **Contact details** (search `TODO` in `index.html`): office addresses,
+   phone, email. The form's `data-email` must match.
+4. **Confirm with the company:** the about text, mission and vision, the service
+   list, and what vehicle was donated to GGSSS (the press release says an
+   18-seater bus; the photo shows a car).
 
 ## Structure
 
 ```
-index.html        company website
-portfolio.html    portfolio
-css/styles.css    shared styles
-js/projects.js    portfolio data (edit this)
-js/main.js        nav, animations, project grid, filters, modal, contact form
-assets/logo.svg   logo mark / favicon
+index.html              company website
+portfolio.html          portfolio
+css/styles.css          shared styles
+js/projects.js          portfolio data (edit this)
+js/main.js              nav, animations, photo placeholders, grid, filters, modal, form
+assets/logo.svg         logo mark / favicon
+assets/photos/          project photos go here
+docs/company-research.md  sources for every fact on the site
 ```
