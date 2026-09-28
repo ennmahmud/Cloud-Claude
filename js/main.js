@@ -92,7 +92,11 @@
 
   /* ---------- Project grid ---------- */
   var grid = document.querySelector("[data-project-grid]");
-  var projects = window.PROJECTS || [];
+  // Company projects first, then community projects; newest first within each.
+  var year = function (p) { var m = String(p.date).match(/\d{4}/); return m ? +m[0] : 0; };
+  var projects = (window.PROJECTS || []).slice().sort(function (a, b) {
+    return (a.group === "company" ? 0 : 1) - (b.group === "company" ? 0 : 1) || year(b) - year(a);
+  });
   var cats = window.CATEGORY_LABELS || {};
   var groups = window.GROUP_LABELS || {};
 
@@ -116,8 +120,11 @@
     if (!grid) return;
     var limit = parseInt(grid.getAttribute("data-limit"), 10) || projects.length;
     var base = grid.getAttribute("data-group");
+    var featuredOnly = grid.hasAttribute("data-featured");
     var list = projects
-      .filter(function (p) { return (!base || p.group === base) && matches(p, filter); })
+      .filter(function (p) {
+        return (!base || p.group === base) && (!featuredOnly || p.featured) && matches(p, filter);
+      })
       .slice(0, limit);
     grid.innerHTML = list.map(card).join("") || "<p>No projects in this category yet.</p>";
     observeReveals(grid);
@@ -162,7 +169,8 @@
     modal.querySelector("[data-m-title]").textContent = p.title;
     modal.querySelector("[data-m-summary]").textContent = p.summary;
     modal.querySelector("[data-m-facts]").innerHTML =
-      [["Location", p.location], ["Date", p.date], ["Status", p.status]]
+      [["Location", p.location], ["Date", p.date], ["Status", p.status], ["Client", p.client]]
+        .filter(function (f) { return f[1]; })
         .map(function (f) { return "<div><small>" + f[0] + "</small><strong>" + esc(f[1]) + "</strong></div>"; })
         .join("");
     modal.querySelector("[data-m-scope]").innerHTML = (p.scope || []).map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("");

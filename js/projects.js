@@ -5,8 +5,9 @@
  *   Engr. Muntari Sagir Malumfashi, and commissioned on 20 April 2026.
  *   Sources: Katsina State Government press release and Taskar Gizago
  *   (see docs/company-research.md).
- * group "company": empty slots for Muntasrab contracts. Fill them in from the
- *   company's own records, or delete them.
+ * group "company": Muntasrab's own projects (sources noted on each entry).
+ *   `featured: true` shows a project in "Selected projects" on the home page.
+ *   To add an empty slot, copy an entry and set `placeholder: true`.
  *
  * Photos: each entry has `photos`, a list of { src, caption }. While `src` is
  * empty, a placeholder box shows the caption. Put the file in assets/photos/
@@ -103,49 +104,175 @@ window.PROJECTS = [
     photos: [{ src: "", caption: "Vehicle handover to the school" }],
   },
 
-  /* ---- Company contract slots: replace with real Muntasrab projects ---- */
+  /* ---- Company projects ---- */
   {
-    id: "company-project-1",
+    // Source: Facebook post by Kamaladdeen Salmanu, 16 Mar 2022 (see docs/company-research.md).
+    // TODO: confirm completion date, scope and final status with the company.
+    id: "malumfashi-maternal-children-hospital",
+    featured: true,
+    group: "company",
+    category: "healthcare",
+    title: "Rehabilitation of Maternal & Children Hospital, Malumfashi",
+    location: "Malumfashi, Katsina State",
+    date: "2022",
+    status: "Rehabilitation works",
+    summary:
+      "Rehabilitation of the Maternal and Children Hospital in Malumfashi, sponsored by Senator Bello Mandiya (Funtua Zone), with Muntasrab Global Concept on site.",
+    scope: ["Building rehabilitation", "External works"],
+    photos: [
+      { src: "", caption: "Hospital buildings during rehabilitation" },
+      { src: "", caption: "Completed hospital" },
+    ],
+  },
+
+  {
+    // Source: Facebook post by Aliyu Garba Hange, 29 Jan 2022, with site signboard.
+    id: "malumfashi-54-houses",
+    featured: true,
+    group: "company",
+    category: "housing",
+    title: "54-House Housing Development, Malumfashi",
+    location: "Malumfashi, Katsina State",
+    date: "2022",
+    status: "Developer",
+    summary:
+      "Development of 54 houses for the Medical and Health Workers Union of Nigeria, Malumfashi branch, financed by the Federal Mortgage Bank of Nigeria, with Muntasrab Global Concept Limited as developer. A team led by Arc. Ahmad Musa Dangiwa visited the site to inspect progress.",
+    scope: ["Housing development", "54 bungalows", "Site infrastructure"],
+    client: "Medical and Health Workers Union of Nigeria, Malumfashi",
+    photos: [
+      { src: "", caption: "Site signboard: Proposed Housing Development (54 houses)" },
+      { src: "", caption: "Row of bungalows under construction" },
+      { src: "", caption: "Estate road with drainage channel" },
+      { src: "", caption: "Site inspection visit" },
+    ],
+  },
+
+  {
+    // Source: post by isiyaku_faisal, 8 Mar 2025 ("through our company 'MUNTASRAB GLOBAL CONCEPT LIMITED'").
+    // TODO: confirm scope and status with the company.
+    id: "ktsta-facility",
+    featured: true,
     group: "company",
     category: "infrastructure",
-    title: "Company project (to be added)",
-    location: "Location",
-    date: "Year",
-    status: "Status",
-    summary: "Add a short description of the project, the client and what Muntasrab delivered.",
-    scope: ["Scope item"],
-    photos: [{ src: "", caption: "Project photo" }],
-    placeholder: true,
+    title: "Katsina State Transport Authority (KTSTA) Facility",
+    location: "Katsina, Katsina State",
+    date: "2025",
+    status: "Construction",
+    summary:
+      "Construction of a modern facility for the Katsina State Transport Authority under the administration of Governor Dikko Umaru Radda. The design includes a gatehouse, perimeter fencing and a shaded bus park.",
+    scope: ["Gatehouse", "Perimeter fence", "Bus park & shades", "Parking & landscaping"],
+    client: "Katsina State Government",
+    photos: [
+      { src: "", caption: "Design render: KTSTA entrance and gatehouse" },
+      { src: "", caption: "Design render: bus park with shades" },
+    ],
   },
+
   {
-    id: "company-project-2",
+    // Source: Mobile Media Crew, 27 Feb 2022 (Hausa): Governor Aminu Bello Masari inspected the works on 26 Feb 2022.
+    id: "apc-secretariat-katsina",
+    featured: true,
     group: "company",
     category: "building",
-    title: "Company project (to be added)",
-    location: "Location",
-    date: "Year",
-    status: "Status",
-    summary: "Add a short description of the project, the client and what Muntasrab delivered.",
-    scope: ["Scope item"],
-    photos: [{ src: "", caption: "Project photo" }],
-    placeholder: true,
+    title: "APC State Secretariat, Katsina",
+    location: "Near FCE, Dutsin-Ma Road, Katsina",
+    date: "2022",
+    status: "Construction",
+    summary:
+      "Construction of the new state secretariat of the All Progressives Congress (APC) in Katsina, including an auditorium and office wings. Governor Aminu Bello Masari inspected the works in February 2022 and commended the company.",
+    scope: ["Office complex", "Auditorium", "Reinforced concrete frame"],
+    client: "All Progressives Congress (APC), Katsina State",
+    photos: [
+      { src: "", caption: "Design render: secretariat complex" },
+      { src: "", caption: "Design render: cutaway with auditorium" },
+      { src: "", caption: "Governor's inspection of the columns" },
+    ],
   },
   {
-    id: "company-project-3",
+    // Source: Aliyu Garba Hange, 2 Mar 2020 (Hausa): contract awarded by the Katsina State Government.
+    id: "galadima-palace-malumfashi",
+    featured: true,
     group: "company",
     category: "building",
-    title: "Company project (to be added)",
-    location: "Location",
-    date: "Year",
-    status: "Status",
-    summary: "Add a short description of the project, the client and what Muntasrab delivered.",
-    scope: ["Scope item"],
-    photos: [{ src: "", caption: "Project photo" }],
-    placeholder: true,
+    title: "Reconstruction of the Galadiman Katsina's Palace, Malumfashi",
+    location: "Malumfashi, Katsina State",
+    date: "2020",
+    status: "Demolition & rebuild",
+    summary:
+      "Demolition of the palace of the Galadiman Katsina, District Head of Malumfashi, a building more than 100 years old, and its reconstruction in modern form, including the residence and offices.",
+    scope: ["Demolition", "Palace & residence", "Offices"],
+    client: "Katsina State Government",
+    photos: [
+      { src: "", caption: "Demolition of the old palace" },
+      { src: "", caption: "Completed palace" },
+    ],
+  },
+
+  /* Mosques. Source: Facebook post by Ishaq Samaila, 13 Mar 2026, reporting that
+     Alhaji Ibrahim Kabir Masari commended Muntasrab for these four projects.
+     TODO: confirm completion status and dates with the company. */
+  {
+    id: "kofar-fada-mosque",
+    group: "company",
+    category: "religious",
+    title: "Renovation of Central Juma'at Mosque, Kofar Fada",
+    location: "Kofar Fada, Malumfashi",
+    date: "2026",
+    status: "Renovation",
+    summary: "Renovation of the Central Juma'at Mosque at Kofar Fada, Malumfashi, sponsored by Alhaji Ibrahim Kabir Masari.",
+    scope: ["Renovation", "Architectural upgrade"],
+    photos: [{ src: "", caption: "Central Juma'at Mosque, Kofar Fada" }],
+  },
+  {
+    id: "dabai-mosque",
+    group: "company",
+    category: "religious",
+    title: "Juma'at Mosque, Dabai",
+    location: "Dabai, Danja LGA",
+    date: "2026",
+    status: "Construction",
+    summary: "Construction of a Juma'at mosque in Dabai town, Danja Local Government Area, sponsored by Alhaji Ibrahim Kabir Masari.",
+    scope: ["New construction"],
+    photos: [{ src: "", caption: "Juma'at Mosque, Dabai" }],
+  },
+  {
+    id: "safana-mosque",
+    featured: true,
+    group: "company",
+    category: "religious",
+    title: "Central Juma'at Mosque, Safana",
+    location: "Safana LGA",
+    date: "2026",
+    status: "Construction",
+    summary: "Construction of the Central Juma'at Mosque in Safana Local Government Area, sponsored by Alhaji Ibrahim Kabir Masari.",
+    scope: ["Architectural working drawings", "Construction"],
+    photos: [
+      { src: "", caption: "Architectural render: Juma'at Mosque, Safana" },
+      { src: "", caption: "3D exterior view" },
+    ],
+  },
+  {
+    id: "katsina-nine-section-mosque",
+    group: "company",
+    category: "religious",
+    title: "Nine-Section Mosque, Katsina City",
+    location: "Katsina city",
+    date: "2026",
+    status: "Construction",
+    // The post also includes a render titled "Proposed Mosque Upgrade at Daki-Tara, Katsina";
+    // confirm with the company whether that is this project.
+    summary: "Construction of a large mosque with nine sections within Katsina city, sponsored by Alhaji Ibrahim Kabir Masari.",
+    scope: ["Architectural working drawings", "Construction"],
+    photos: [
+      { src: "", caption: "Architectural render: aerial view" },
+      { src: "", caption: "Architectural render: street view" },
+    ],
   },
 ];
 
 window.CATEGORY_LABELS = {
+  housing: "Housing",
+  religious: "Religious buildings",
   healthcare: "Healthcare",
   education: "Education",
   infrastructure: "Infrastructure",
