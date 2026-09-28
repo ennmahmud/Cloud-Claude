@@ -24,6 +24,10 @@ each source:
 - Engr. Muntari Sagir Malumfashi, Chief Executive; FNICE (October 2025)
 - The six community projects commissioned by Governor Dikko Umaru Radda on
   20 April 2026. The CEO funded these **personally**, and the site says so.
+- Company projects, from public posts: the Galadiman Katsina's palace (2020),
+  the 54-house FMBN-financed estate (2022), the APC State Secretariat (2022),
+  the Maternal & Children Hospital rehabilitation (2022), the KTSTA facility
+  (2025) and four Juma'at mosques (2025–26)
 
 ## Before going live
 
@@ -35,8 +39,9 @@ each source:
 
    Use the company's own photos, or get permission. The Katsina State
    Government press photos belong to the government.
-2. **Company projects.** `js/projects.js` has three `company-project-*` slots.
-   Fill them in with real Muntasrab contracts or delete them.
+2. **Company projects.** `js/projects.js` lists nine company projects taken
+   from public posts. Have the company confirm the status, dates and scope of
+   each (see the `TODO` comments).
 3. **Contact details** (search `TODO` in `index.html`): office addresses,
    phone, email. The form's `data-email` must match.
 4. **Confirm with the company:** the about text, mission and vision, the service

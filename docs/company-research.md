@@ -76,6 +76,36 @@ Best for a project gallery:
 
 Taskar Gizago's photos (commissioning, FNICE portrait) block direct download.
 
+## 4a. From Facebook and Instagram (screenshots supplied by the user, 28 Sep 2026)
+
+These posts name the company, and together they confirm Muntasrab as a
+**construction company** ("kamfanin gine-gine") headed by Engr. Muntari Sagir
+Malumfashi. It also appears as "Muntasrab Global Concept Nig Ltd (MGC)". The
+**registered** name is Muntasrab Global Concept Ltd (RC 1161080).
+
+### Company projects (on the site)
+
+| Project | Year | Client / sponsor | Post |
+|---------|------|------------------|------|
+| Reconstruction of the Galadiman Katsina's palace, Malumfashi: demolition of the 100+-year-old palace, rebuilt with residence and offices | 2020 | Katsina State Government (Gov. Aminu Bello Masari) | Aliyu Garba Hange, 2 Mar 2020 (Hausa); demolition photos |
+| 54-house housing development, Malumfashi | 2022 | Client: Medical and Health Workers Union of Nigeria, Malumfashi. Financed by the Federal Mortgage Bank of Nigeria. **Developer: Muntasrab Global Concept Limited** (site signboard) | Aliyu Garba Hange, 29 Jan 2022 (Hausa); visit by Arc. Ahmad Musa Dangiwa's team; photos of bungalows and drainage |
+| APC State Secretariat, near FCE, Dutsin-Ma Road, Katsina | 2022 | All Progressives Congress, Katsina | Mobile Media Crew, 27 Feb 2022 (Hausa): Gov. Masari inspected the works on 26 Feb 2022 and commended "Muntasrab Global Concept Nig LTD (MGC)"; the CEO promised completion within months; renders and site photos |
+| Rehabilitation of Maternal & Children Hospital, Malumfashi | 2022 | Senator Bello Mandiya (Funtua Zone) | Kamaladdeen Salmanu, 16 Mar 2022 |
+| Katsina State Transport Authority (KTSTA) facility | 2025 | Katsina State Government (Gov. Dikko Umaru Radda) | isiyaku_faisal, 8 Mar 2025: "through our company 'MUNTASRAB GLOBAL CONCEPT LIMITED'"; design renders |
+| Four Juma'at mosques: renovation of the Central Mosque at Kofar Fada, Malumfashi; a mosque in Dabai (Danja LGA); the Central Mosque in Safana LGA; a nine-section mosque in Katsina city | 2025–26 | Alhaji Ibrahim Kabir Masari, Special Adviser to the President on Political and Other Matters | Ishaq Samaila (verified), 13 Mar 2026; architectural working drawings for Safana and "Daki-Tara, Katsina" |
+
+### Other leads (not on the site yet)
+
+| Post | What it says | What's needed |
+|------|--------------|---------------|
+| Ahmad Aminu Kado ("our company MUNTASRAB GLOBAL CONCEPT") | A Juma'at mosque funded by Hon. Alhaji Ibrahim Masari was completed, with opening on Friday 28 Nov 2025; photos of a white two-storey mosque | The top of the post, cut off in the screenshot, names the mosque. Probably one of the four above. |
+| Abbas Aminu, 25 Jul 2025, Kafur | The CEO and his team attended the opening of a Friday mosque in Jange, Dantutture ward, Kafur. The post says Masari built it. | Doesn't say Muntasrab built it; ask the company. |
+| Habu Adamu, ~2025 | Appears to show an appointment letter signed by the "MD/Chief Executive Officer, MGCL" | Too small to read. |
+| Mobile Media Crew site-inspection photos (hi-vis, rebar columns) | Likely the APC Secretariat inspection | Confirm. |
+
+The photos in these posts belong to whoever posted them. Use originals from
+the company, or get permission.
+
 ## 5. Claimed elsewhere, still not confirmed
 
 | Claim | Status |
